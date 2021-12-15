@@ -24,7 +24,7 @@ bar search: user.vscode("workbench.view.search")
 bar source: user.vscode("workbench.view.scm")
 bar switch: user.vscode("workbench.action.toggleSidebarVisibility")
 
-symbol hunt [<user.text>]:
+symbol (hunt|scout) [<user.text>]:
     user.vscode("workbench.action.gotoSymbol")
     sleep(50ms)
     insert(text or "")
@@ -50,7 +50,7 @@ wrap switch: user.vscode("editor.action.toggleWordWrap")
 zen switch: user.vscode("workbench.action.toggleZenMode")
 
 # File Commands
-file hunt [<user.text>]:
+file (hunt|scout) [<user.text>]:
     user.vscode("workbench.action.quickOpen")
     sleep(50ms)
     insert(text or "")
@@ -209,3 +209,8 @@ cell run above: user.vscode("jupyter.runallcellsabove.palette")
 cell run: user.vscode("jupyter.runcurrentcell")
 
 install local: user.vscode("workbench.extensions.action.installVSIX")
+ 
+change language <user.text>: 
+    user.vscode("workbench.action.editor.changeLanguageMode")
+    "{text}"
+    key(enter)
