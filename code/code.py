@@ -9,6 +9,8 @@ extension_lang_map = {
     ".bat": "batch",
     ".c": "c",
     ".cmake": "cmake",
+    ".clj": "clojure",
+    ".cljs": "clojure",
     ".cpp": "cplusplus",
     ".cs": "csharp",
     ".gdb": "gdb",

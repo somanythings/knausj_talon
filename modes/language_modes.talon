@@ -1,4 +1,8 @@
 ^force see sharp$: user.code_set_language_mode("csharp")
+^force closure$: user.code_set_language_mode("clojure")
+^force clojure$: user.code_set_language_mode("clojure")
+^force sparql$: user.code_set_language_mode("sparql")
+
 ^force see plus plus$: user.code_set_language_mode("cplusplus")
 ^force go (lang|language)$: user.code_set_language_mode("go")
 ^force java$: user.code_set_language_mode("java")
