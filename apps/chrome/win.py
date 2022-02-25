@@ -50,3 +50,6 @@ class BrowserActions:
         #action(browser.title)
     def toggle_dev_tools():
         actions.key('ctrl-shift-i')
+    def switch_user():
+        actions.key('ctrl-shift-m')
+

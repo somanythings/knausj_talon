@@ -30,6 +30,9 @@ show extensions: browser.show_extensions()
 show history: browser.show_history()
 show cache: browser.show_clear_cache()
 
+switch user:  key(ctrl-shift-m)
+    #browser.switch_user()
+
 #todo - port to apps
 # navigating current page
 # help: key(?)
