@@ -28,9 +28,7 @@ mod.list("talon_scopes")
 mod.list("talon_modes")
 
 ctx.matches = r"""
-mode: user.talon
-mode: user.auto_lang 
-and code.language: talon
+tag: user.talon
 """
 ctx.lists["user.code_functions"] = {
     "insert": "insert",
@@ -95,7 +93,7 @@ class UserActions:
     def code_operator_assignment():
         actions.auto_insert(" = ")
 
-    def code_comment():
+    def code_comment_line_prefix():
         actions.auto_insert("#")
 
     def code_insert_function(text: str, selection: str):
