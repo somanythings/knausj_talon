@@ -17,4 +17,3 @@ mode: all
 ^talon sleep [<phrase>]$: speech.disable()
 ^drowse [<phrase>]$: speech.disable()
 ^talon wake$: speech.enable()
-
